@@ -141,17 +141,19 @@
     <audio id="audio-player" preload="auto"></audio>
     <script>
         // Image logic
-    const images = [
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (1)/LRP.jpg", audio: "null" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/1.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/1.mp3" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/2.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/2.mp3" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/3.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/3.mp3" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/4.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/4.mp3" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/5.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/5.mp3" },
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (4)/6.jpg", audio: "https://fleet-kingfish-basically.ngrok.app/audio/set (4)/6.mp3" },
+    const baseUrl = "https://hw-adbw.onrender.com";
 
-    { src: "https://fleet-kingfish-basically.ngrok.app/images/set (1)/Submit.jpg", audio: "null" }
-    ];
+const images = [
+    { src: `${baseUrl}/images/set%20(1)/LRP.jpg`, audio: "null" },
+    { src: `${baseUrl}/images/set%20(4)/1.jpg`, audio: `${baseUrl}/audio/set%20(4)/1.mp3` },
+    { src: `${baseUrl}/images/set%20(4)/2.jpg`, audio: `${baseUrl}/audio/set%20(4)/2.mp3` },
+    { src: `${baseUrl}/images/set%20(4)/3.jpg`, audio: `${baseUrl}/audio/set%20(4)/3.mp3` },
+    { src: `${baseUrl}/images/set%20(4)/4.jpg`, audio: `${baseUrl}/audio/set%20(4)/4.mp3` },
+    { src: `${baseUrl}/images/set%20(4)/5.jpg`, audio: `${baseUrl}/audio/set%20(4)/5.mp3` },
+    { src: `${baseUrl}/images/set%20(4)/6.jpg`, audio: `${baseUrl}/audio/set%20(4)/6.mp3` },
+    { src: `${baseUrl}/images/set%20(1)/Submit.jpg`, audio: "null" }
+];
+
 
 const imageElement = document.getElementById('homework-image');
 const audioPlayer = document.getElementById('audio-player');
